@@ -29,11 +29,32 @@
     display: inline-block;
 }
 
+.typing {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 1s steps(10) infinite alternate; // changed from 2s to 1s
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
 .user {
     background-color: #d7e3ff;
     border-radius: 10px;
     align-self: flex-end;
-    margin-left: auto;
+    margin-left: 19%;
+    width: 100%;
+}
+
+.boot {
+    background-color: #e6e6e2;
 }
 
 .chat-input {
