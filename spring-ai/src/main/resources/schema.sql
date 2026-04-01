@@ -6,6 +6,10 @@ CREATE TABLE IF NOT EXISTS CHAT_MEMORY (
     description VARCHAR(256)
 );*/
 
+/* 
+https://github.com/spring-projects/spring-ai/blob/main/memory/repository/spring-ai-model-chat-memory-repository-jdbc/src/main/resources/org/springframework/ai/chat/memory/repository/jdbc/schema-postgresql.sql
+*/
+
 CREATE TABLE IF NOT EXISTS SPRING_AI_CHAT_MEMORY (
     conversation_id VARCHAR(36) NOT NULL,
     content TEXT NOT NULL,
